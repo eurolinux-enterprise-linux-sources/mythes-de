@@ -2,7 +2,7 @@ Name: mythes-de
 Summary: German thesaurus
 %define upstreamid 20130206
 Version: 0.%{upstreamid}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Source0: http://www.openthesaurus.de/export/Deutscher-Thesaurus.oxt
 Source1: http://www.openthesaurus.de/export/Schweizer-Thesaurus.oxt
 Group: Applications/Text
@@ -59,6 +59,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/mythes/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.20130206-2
+- Mass rebuild 2013-12-27
+
 * Wed Feb 06 2013 Caolán McNamara <caolanm@redhat.com> - 0.20130206-1
 - Resolves: rhbz#905994 upgrade to latest version
 
